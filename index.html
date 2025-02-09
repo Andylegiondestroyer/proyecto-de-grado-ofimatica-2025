@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Animaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-12345">
+    <div class="background"></div>
+
+    <div id="inicio" class="content fade">
+        <h2>Pagina informatica sobre las herramientas ofimaticas (Word, Excel y PowerPoint)</h2>
+        <p>Explora información basica para principiantes sobre Word, Excel y PowerPoint.</p>
+        <div class="intro-container">
+            <div class="intro-box">
+                <img src="https://sociologiac.net/sociology/wp-content/uploads/2008/08/alternatives-microsoft-word-free.jpg" alt="Microsoft Word">
+                <h3>Microsoft Word</h3>
+                <p>Microsoft Word es un procesador de texto ampliamente utilizado en el ámbito profesional, académico y personal. Permite crear, editar y formatear documentos de manera eficiente y con múltiples opciones de personalización. Puedes usar Word para redactar cartas, informes, artículos, y mucho más, agregando imágenes, tablas, gráficos y otros elementos multimedia. Ofrece funciones como la corrección ortográfica, control de cambios, plantillas prediseñadas, y la capacidad de colaborar en tiempo real con otros usuarios.</p>
+             <iframe src="https://www.youtube.com/embed/wyeEL7kLw6M" allowfullscreen></iframe>
+                <a href="#" onclick="mostrarSeccion('word', 'slide')">Más sobre Word</a> <!-- Link para ir a la sección de Word -->
+            </div>
+            <div class="intro-box">
+                <img src="https://concepto.de/wp-content/uploads/2018/09/excel3-e1537469723415.jpg" alt="Microsoft Excel">
+                <h3>Microsoft Excel</h3>
+                <p>Microsoft Excel es una hoja de cálculo poderosa que permite organizar, analizar y visualizar datos. Es una herramienta esencial para el manejo de números, fórmulas matemáticas, estadísticas y gráficos. Con Excel, puedes realizar cálculos automáticos mediante fórmulas, construir tablas dinámicas para resumir grandes cantidades de información, y crear gráficos visualmente atractivos para facilitar la interpretación de los datos. Es comúnmente utilizado en contabilidad, finanzas, administración de proyectos, y análisis de datos.</p>
+              <iframe src="https://www.youtube.com/embed/WcDT0wXLMYM" allowfullscreen></iframe>
+                <a href="#" onclick="mostrarSeccion('excel', 'zoom')">Más sobre Excel</a> <!-- Link para ir a la sección de Excel -->
+            </div>
+            <div class="intro-box">
+                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/LEN6MXHYX5D5NA77IMY5KCYEWA.jpg" alt="Microsoft PowerPoint">
+                <h3>Microsoft PowerPoint</h3>
+                <p>Microsoft PowerPoint es una herramienta de presentación visual que permite crear diapositivas dinámicas y profesionales. Es ideal para presentaciones en reuniones de trabajo, conferencias académicas o cualquier otro tipo de presentación pública. Puedes incorporar texto, imágenes, videos, transiciones animadas y efectos para hacer que la presentación sea más atractiva. PowerPoint facilita la comunicación de ideas de forma clara y visual, ayudando a mantener la atención del público y a transmitir la información de manera efectiva.</p>
+             <iframe src="https://www.youtube.com/embed/5HmZZnibXUM" allowfullscreen></iframe>
+                <a href="#" onclick="mostrarSeccion('powerpoint', 'rotate')">Más sobre PowerPoint</a> <!-- Link para ir a la sección de PowerPoint -->
+            </div>
+        </div>
+    </div>
+
+   <!-- Dentro de la sección existente -->
+<div id="word" class="content slide">
+    <h2>Microsoft Word</h2>
+    <p>
+    <a href="#" onclick="mostrarSeccion('inicio', 'fade')">Volver al inicio</a> <!-- Link para regresar a la página de inicio -->
+ 
+    <!-- Contenido del temario -->
+    <div id="word-content">
+        <h1>Temario Básico de Word 2016</h1>
+
+        <h2 id="word1" onclick="mostrarTema('word1')">Pantalla Principal</h2>
+        <hr class="tema-separador">
+        <div id="contenido-word1" class="contenido-tema" style="display:none;">
+            <p><ul>
+        <li><strong>Barra de Título:</strong> Muestra el nombre del documento y el estado de la aplicación.</li>
+        <li><strong>Barra de Herramientas de Acceso Rápido:</strong> Contiene accesos directos a comandos frecuentes como Guardar, Deshacer y Rehacer.</li>
+        <li><strong>Cinta de Opciones:</strong> Panel que organiza las herramientas en pestañas (Inicio, Insertar, Diseño, etc.).</li>
+        <li><strong>Área de Edición:</strong> Zona principal donde se redacta y edita el contenido del documento.</li>
+        <li><strong>Reglas:</strong> Permiten ajustar los márgenes y tabulaciones del documento.</li>
+        <li><strong>Barra de Estado:</strong> Proporciona información sobre el documento, como el número de páginas, el idioma y el modo de visualización.</li>
+        <li><strong>Controles de Zoom y Vista:</strong> Permiten ajustar la vista del documento y su nivel de ampliación.</li>
+    </ul>
+    <img src="https://www.aulaclic.es/word-2016/graficos/ventana-word-explicada.png" alt="Pantalla principal de Word">"..</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/oi9woh5hQz8" allowfullscreen></iframe>
+                <p>Video: Pantalla Principal</p>
+            </div>
+        </div>
+
+        <h2 id="word2" onclick="mostrarTema('word2')">Crear un Documento</h2>
+        <hr class="tema-separador">
+        <div id="contenido-word2" class="contenido-tema" style="display:none;">
+            <p><p><p>Para agregar una nueva página en Word, sigue estos pasos:</p>
+     <h2>Agregar una Nueva Página</h2>
+          <ol>
+        <li>Haz clic en la pestaña <strong>Insertar</strong>.</li>
+        <li>Selecciona <strong>Página en blanco</strong>.</li>
+        <li>La nueva página aparecerá inmediatamente después de la actual.</li>
+    </ol>
+    <h2>Eliminar una Página</h2>
+    <p>Para eliminar una página en Word, sigue estos pasos:</p>
+    <ol>
+        <li>Ve a la página que deseas eliminar.</li>
+        <li>Selecciona todo el contenido de la página (usa <strong>Ctrl + A</strong> si solo es esa página).</li>
+        <li>Presiona <strong>Suprimir</strong> para borrar el contenido y la página desaparecerá.</li>
+    </ol>
+    <img src="https://www.customguide.com/imagenes/cursos/word-2016/word--crear-documentos-nuevos--02.png">".</p>.</p>
+            <div class="video-container">
+               <iframe src="https://www.youtube.com/embed/pPO3FCqVLmk" allowfullscreen></iframe>
+                <p>Video: Crear un Documento</p>
+            </div>
+        </div>
+
+        <h2 id="word3" onclick="mostrarTema('word3')">Agregar y Eliminar Páginas</h2>
+        <hr class="tema-separador">
+        <div id="contenido-word3" class="contenido-tema" style="display:none;">
+            <p><p><p>Para agregar una nueva página en Word, sigue estos pasos:</p>
+     <h2>Agregar una Nueva Página</h2>
+          <ol>
+        <li>Haz clic en la pestaña <strong>Insertar</strong>.</li>
+        <li>Selecciona <strong>Página en blanco</strong>.</li>
+        <li>La nueva página aparecerá inmediatamente después de la actual.</li>
+    </ol>
+    <h2>Eliminar una Página</h2>
+    <p>Para eliminar una página en Word, sigue estos pasos:</p>
+    <ol>
+        <li>Ve a la página que deseas eliminar.</li>
+        <li>Selecciona todo el contenido de la página (usa <strong>Ctrl + A</strong> si solo es esa página).</li>
+        <li>Presiona <strong>Suprimir</strong> para borrar el contenido y la página desaparecerá.</li>
+    </ol>
+    <img src="https://i.ytimg.com/vi/f8gfspPlBSM/maxresdefault.jpg" alt="Agregar y eliminar páginas">".</p>.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Hty86sjxsFk" allowfullscreen></iframe>
+                <p>Video: Agregar y Eliminar Páginas</p>
+            </div>
+        </div>
+
+        <h2 id="word4" onclick="mostrarTema('word4')">Insertar Imágenes</h2>
+        <hr class="tema-separador">
+        <div id="contenido-word4" class="contenido-tema" style="display:none;">
+            <p><h1>Insertar Imágenes en Word</h1>
+    <p>Pasos para insertar una imagen en un documento de Word:</p>
+    <ol>
+        <li>Haz clic en la pestaña <strong>Insertar</strong>.</li>
+        <li>Selecciona <strong>Imágenes</strong> en el grupo <em>Ilustraciones</em>.</li>
+        <li>Elige <strong>Este dispositivo</strong> para insertar una imagen desde tu computadora.</li>
+        <li>Selecciona la imagen deseada y haz clic en <strong>Insertar</strong>.</li>
+        <li>La imagen aparecerá en el documento y puedes ajustarla según tus necesidades.</li>
+    </ol>
+    <img src="https://www.customguide.com/imagenes/cursos/word-2016/word--imagenes-05.png" alt="Insertar imágenes en Word">"..</p>
+            <div class="video-container">
+                 <iframe src="https://www.youtube.com/embed/46yEcap2Whc" allowfullscreen></iframe>
+                <p>Video: Insertar Imágenes</p>
+            </div>
+        </div>
+
+        <h2 id="word5" onclick="mostrarTema('word5')">Aplicar Estilos</h2>
+        <hr class="tema-separador">
+        <div id="contenido-word5" class="contenido-tema" style="display:none;">
+            <p><h2>Aplicar Estilos en Word 2016</h2>
+    <p>Los estilos en Word permiten dar formato rápido y consistente a tu documento. Sigue estos pasos para aplicar estilos:</p>
+    
+    <h3>Paso 1: Seleccionar el Texto</h3>
+    <p>Selecciona el texto al que deseas aplicar un estilo.</p>
+    
+    <h3>Paso 2: Elegir un Estilo</h3>
+    <ol>
+        <li>Haz clic en la pestaña <strong>Inicio</strong>.</li>
+        <li>En el grupo <strong>Estilos</strong>, selecciona el estilo que prefieras: <em>Título, Encabezado, Cita, Normal, etc.</em></li>
+    </ol>
+    
+    <h3>Paso 3: Personalizar el Estilo</h3>
+    <ul>
+        <li>Haz clic derecho en el estilo y selecciona <strong>Modificar</strong> para cambiar el formato.</li>
+        <li>Ajusta la fuente, tamaño, color y espaciado según tus preferencias.</li>
+    </ul>
+    <img src="https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/word_2016/image/insertar_estilo_paso2_xl.png" alt="Aplicar estilos en Word">"..</p>
+            <div class="video-container">
+               <iframe src="https://www.youtube.com/embed/uwN3Un_KBSU" allowfullscreen></iframe>
+                <p>Video: Aplicar Estilos</p>
+            </div>
+        </div>
+
+        <h2 id="word6" onclick="mostrarTema('word6')">Insertar Tablas</h2>
+        <hr class="tema-separador">
+        <div id="contenido-word6" class="contenido-tema" style="display:none;">
+            <p><h2>Insertar Tablas en Word 2016</h2>
+    <p>Las tablas en Word te permiten organizar y presentar información de manera estructurada. Sigue estos pasos para insertar una tabla:</p>
+    
+    <h3>Paso 1: Ir a la pestaña "Insertar"</h3>
+    <p>Haz clic en la pestaña <strong>Insertar</strong> en la cinta de opciones.</p>
+    
+    <h3>Paso 2: Insertar una Tabla</h3>
+    <ol>
+        <li>Haz clic en el botón <strong>Tabla</strong>.</li>
+        <li>Selecciona el número de filas y columnas que deseas arrastrando el cursor.</li>
+    </ol>
+    
+    <h3>Paso 3: Personalizar la Tabla</h3>
+    <ul>
+        <li>Ajusta el tamaño de las celdas manualmente o desde las <strong>Herramientas de tabla</strong>.</li>
+        <li>Aplica estilos de tabla predefinidos desde la pestaña <strong>Diseño</strong>.</li>
+    </ul>
+    <img src="https://www.solvetic.com/uploads/monthly_02_2017/tutorials-0-0-34193300-1486394309.jpg" alt="Insertar tablas en Word">s"..</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/r0XGVMNBCxo" allowfullscreen></iframe>
+                <p>Video: Insertar Tablas</p>
+            </div>
+        </div>
+
+        <h2 id="word7" onclick="mostrarTema('word7')">Revisar y Corregir Texto</h2>
+        <hr class="tema-separador">
+        <div id="contenido-word7" class="contenido-tema" style="display:none;">
+            <p><h1>Revisar y Corregir Texto en Word</h1>
+    <p>Sigue estos pasos para revisar y corregir texto en Word:</p>
+    <ol>
+        <li><strong>Corrector ortográfico:</strong> Ve a <em>Revisar &gt; Ortografía y gramática</em> para corregir errores.</li>
+        <li><strong>Sinónimos:</strong> Haz clic derecho en la palabra y selecciona <em>Sinónimos</em>.</li>
+        <li><strong>Control de cambios:</strong> Actívalo en <em>Revisar &gt; Control de cambios</em> para registrar modificaciones.</li>
+        <li><strong>Comentarios:</strong> Selecciona texto y haz clic en <em>Nuevo comentario</em> en la pestaña <em>Revisar</em>.</li>
+    </ol>
+    <img src="https://es-static.z-dn.net/files/dc2/7d0ceffdabdd02da3412cd1fc37fab74.png" alt="Revisar texto en Word">".</p>.</p>
+            <div class="video-container">
+               <iframe src="https://www.youtube.com/embed/a1rJAawNwE4" allowfullscreen></iframe>
+                <p>Video: Revisar y Corregir Texto</p>
+            </div>
+        </div>
+
+        <h2 id="word8" onclick="mostrarTema('word8')">Imprimir un Documento</h2>
+        <hr class="tema-separador">
+        <div id="contenido-word8" class="contenido-tema" style="display:none;">
+            <p><ol>
+        <li>Haz clic en la pestaña <strong>Archivo</strong>.</li>
+        <li>Selecciona <strong>Imprimir</strong> en el menú.</li>
+        <li>Ajusta las opciones de impresión (impresora, páginas, copias, etc.).</li>
+        <li>Haz clic en <strong>Imprimir</strong> para comenzar la impresión.</li>
+    </ol>
+    <img src="https://i.ytimg.com/vi/sDHV5jcYd_4/sddefault.jpg" alt="Imprimir documento en Word">.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/C6yl6ShyAJI" allowfullscreen></iframe>
+                <p>Video: Imprimir un Documento</p>
+            </div>
+        </div>
+
+        <h2 id="word9" onclick="mostrarTema('word9')">Agregar Encabezados y Pies de Página</h2>
+        <hr class="tema-separador">
+        <div id="contenido-word9" class="contenido-tema" style="display:none;">
+            <p><ol>
+        <li>Seleccione la pestaña <strong>Insertar</strong> y luego elija <strong>Encabezado</strong> o <strong>Pie de página</strong>.</li>
+        <li>Desplácese por los diseños y elija el que quiera usar.</li>
+        <li>Escriba el texto que desee en el encabezado o pie de página.</li>
+        <li><strong>Sugerencia:</strong> Use las <em>Herramientas de encabezado y pie de página</em> para agregar más elementos como fecha, hora o imágenes.</li>
+        <li>Cuando haya terminado, seleccione <strong>Cerrar encabezado y pie de página</strong>.</li>
+    </ol>
+    <img src="https://i.ytimg.com/vi/-qVy_4wGmYk/maxresdefault.jpg" alt="Encabezados y pies de página en Word".>.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/EaB06L45UBw" allowfullscreen></iframe>
+                <p>Video: Agregar Encabezados y Pies de Página</p>
+            </div>
+        </div>
+
+        <h2 id="word10" onclick="mostrarTema('word10')">Teclas Importantes</h2>
+        <hr class="tema-separador">
+        <div id="contenido-word10" class="contenido-tema" style="display:none;">
+            <p><ul>
+        <li><strong>Ctrl + N:</strong> Crear un nuevo documento.</li>
+        <li><strong>Ctrl + O:</strong> Abrir un documento existente.</li>
+        <li><strong>Ctrl + S:</strong> Guardar el documento actual.</li>
+        <li><strong>Ctrl + P:</strong> Imprimir el documento.</li>
+        <li><strong>Ctrl + Z:</strong> Deshacer la última acción.</li>
+        <li><strong>Ctrl + Y:</strong> Rehacer la última acción.</li>
+        <li><strong>Ctrl + C:</strong> Copiar selección.</li>
+        <li><strong>Ctrl + V:</strong> Pegar contenido copiado.</li>
+        <li><strong>Ctrl + X:</strong> Cortar selección.</li>
+        <li><strong>Ctrl + B:</strong> Poner en negrita.</li>
+        <li><strong>Ctrl + I:</strong> Poner en cursiva.</li>
+        <li><strong>Ctrl + U:</strong> Subrayar texto.</li>
+    </ul>
+    <img src="https://www.cyldigital.es/sites/default/files/styles/wide_md/public/selflearning/images/EXT_ECLAP_01.jpg" alt="Teclas importantes en Word">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/sDHV5jcYd_4" allowfullscreen></iframe>
+                <p>Video: Teclas Importantes</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function mostrarTema(temaId) {
+        const temas = document.querySelectorAll('.contenido-tema');
+        temas.forEach(tema => tema.style.display = 'none');
+        document.getElementById('contenido-' + temaId).style.display = 'block';
+    }
+</script>
+
+</div>
+
+  
+  
+  
+  
+<div id="excel" class="content slide">
+    <h2>Microsoft Excel</h2>
+    <p>Detalles adicionales sobre el software Microsoft Excel.</p>
+    <a href="#" onclick="mostrarSeccion('inicio', 'fade')">Volver al inicio</a> 
+ 
+    <!-- Contenido del temario -->
+    <div id="excel-content">
+        <h1>Temario Básico de Excel 2016</h1>
+
+        <h2 id="ppt1" onclick="mostrarTema('ppt1')">Pantalla Principal</h2>
+        <hr class="tema-separador">
+        <div id="contenido-ppt1" class="contenido-tema" style="display:none;">
+            <p><ul>
+    <li><strong>Cinta de Opciones (Ribbon)</strong>: Contiene pestañas con botones para herramientas como "Inicio", "Insertar", "Fórmulas", etc.</li>
+    <li><strong>Barra de Herramientas</strong>: Contiene botones para acciones comunes, como "Guardar", "Deshacer", etc.</li>
+    <li><strong>Barra de Fórmulas</strong>: Área para ver y editar el contenido de la celda seleccionada.</li>
+    <li><strong>Área de la Hoja de Cálculo</strong>: 
+        <ul>
+            <li><strong>Barra lateral de Hojas</strong>: Muestra las pestañas de las diferentes hojas del libro.</li>
+            <li><strong>Cuadrícula de Celdas</strong>: Una malla de celdas organizadas en filas y columnas donde se ingresan datos.</li>
+        </ul>
+    </li>
+    <li><strong>Barra de Estado</strong>: Muestra información como la celda seleccionada, el modo de selección y el zoom.</li>
+</ul>
+<img src="https://slideplayer.es/slide/13919015/86/images/8/8.jpg" alt="Pantalla Principal de Excel">
+   .</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/M8KOUKTW1AU" allowfullscreen></iframe>
+                <p>Video: Pantalla Principal</p>
+            </div>
+        </div>
+
+        <h2 id="ppt2" onclick="mostrarTema('ppt2')">Crear un Documento en Excel</h2>
+        <hr class="tema-separador">
+        <div id="contenido-ppt2" class="contenido-tema" style="display:none;">
+            <p><ol>
+            <li>Haz clic en <strong>Archivo &gt; Nuevo</strong>.</li>
+            <li>Selecciona <strong>Libro en blanco</strong> o elige una plantilla predefinida.</li>
+            <li>Comienza a trabajar en tu nueva hoja de cálculo.</li>
+        </ol>
+        <img src="https://i.ytimg.com/vi/LSRhal8Fljk/sddefault.jpg">.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/_Uh8ssSX6eM" allowfullscreen></iframe>
+                <p>Video: Crear un Documento en Excel</p>
+            </div>
+        </div>
+
+        <h2 id="ppt3" onclick="mostrarTema('ppt3')">Insertar o Eliminar Filas o Columnas</h2>
+        <hr class="tema-separador">
+        <div id="contenido-ppt3" class="contenido-tema" style="display:none;">
+            <p> <ol>
+            <li>Selecciona la fila o columna donde quieras hacer la inserción.</li>
+            <li>Haz clic derecho y elige <strong>Insertar</strong>.</li>
+        </ol>
+        <h3>Eliminar Filas o Columnas</h3>
+        <ol>
+            <li>Selecciona la fila o columna que deseas eliminar.</li>
+            <li>Haz clic derecho y elige <strong>Eliminar</strong>.</li>
+        </ol>
+        <img src="https://www.solvetic.com/uploads/monthly_07_2016/tutorials-7463-0-04468000-1469544189.jpg">.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/7R_pBEeQ7Eo" allowfullscreen></iframe>
+                <p>Video: Insertar o Eliminar Filas o Columnas</p>
+            </div>
+        </div>
+
+        <h2 id="ppt4" onclick="mostrarTema('ppt4')">Ocultar Filas y Columnas</h2>
+        <hr class="tema-separador">
+        <div id="contenido-ppt4" class="contenido-tema" style="display:none;">
+            <p><ol>
+            <li>Selecciona la fila o columna donde quieras hacer la inserción.</li>
+            <li>Haz clic derecho y elige <strong>Insertar</strong>.</li>
+        </ol>
+        <h3>Eliminar Filas o Columnas</h3>
+        <ol>
+            <li>Selecciona la fila o columna que deseas eliminar.</li>
+            <li>Haz clic derecho y elige <strong>Eliminar</strong>.</li>
+        </ol>
+        <img src="https://excelfull.com/excel/wp-content/uploads/2022/09/ocultar-filas-y-columnas.png">.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/om4kxpqWmaE" allowfullscreen></iframe>
+                <p>Video: Ocultar Filas y Columnas</p>
+            </div>
+        </div>
+
+        <h2 id="ppt6" onclick="mostrarTema('ppt6')">Crear Fórmulas</h2>
+        <hr class="tema-separador">
+        <div id="contenido-ppt6" class="contenido-tema" style="display:none;">
+            <p><ol>
+            <li>Haz clic en la celda donde deseas colocar el resultado.</li>
+            <li>Escribe el símbolo <strong>=</strong> para comenzar la fórmula.</li>
+            <li>Introduce la operación que deseas realizar, como <strong>SUMA</strong>, <strong>RESTAR</strong>, <strong>PRODUCTO</strong>, etc. Por ejemplo: <code>=SUMA(A1:A5)</code>.</li>
+            <li>Presiona <strong>Enter</strong> para ejecutar la fórmula.</li>
+        </ol>
+        <h3>Ejemplos de Fórmulas Comunes</h3>
+        <ul>
+            <li><strong>Suma:</strong> <code>=SUMA(A1:A10)</code></li>
+            <li><strong>Promedio:</strong> <code>=PROMEDIO(A1:A10)</code></li>
+            <li><strong>Producto:</strong> <code>=PRODUCTO(A1:A10)</code></li>
+        </ul>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRDKRzg1SCLgqF6ZULBjp_AhMYSXgubxmdRw&s">.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/2i2BaL7lVAg" allowfullscreen></iframe>
+                <p>Video: Crear Fórmulas</p>
+            </div>
+        </div>
+
+        <h2 id="ppt9" onclick="mostrarTema('ppt9')">Crear Gráficos de Datos</h2>
+        <hr class="tema-separador">
+        <div id="contenido-ppt9" class="contenido-tema" style="display:none;">
+            <p>
+              <ol>
+            <li>Selecciona los datos que deseas representar.</li>
+            <li>Haz clic en la pestaña <strong>Insertar</strong>.</li>
+            <li>En la sección de Gráficos, elige el tipo de gráfico que prefieras, como gráfico de barras, líneas, pastel, etc.</li>
+            <li>Personaliza el gráfico según tus necesidades, como los colores, leyenda, etiquetas, etc.</li>
+        </ol>
+        <img src="https://www.solvetic.com/uploads/monthly_07_2017/tutorials-0-0-85744700-1500018899.png">.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/6fUMMhPiHPA" allowfullscreen></iframe>
+                <p>Video: Crear Gráficos de Datos</p>
+            </div>
+        </div>
+
+        <h2 id="ppt10" onclick="mostrarTema('ppt10')">Dar Formato a un Gráfico</h2>
+        <hr class="tema-separador">
+        <div id="contenido-ppt10" class="contenido-tema" style="display:none;">
+            <p><ul>
+            <li><strong>Modificar colores:</strong> Cambia los colores de las barras, líneas o áreas del gráfico.</li>
+            <li><strong>Agregar etiquetas de datos:</strong> Añade valores dentro de las barras o secciones del gráfico.</li>
+            <li><strong>Ajustar la leyenda:</strong> Cambia la posición o el formato de la leyenda del gráfico.</li>
+            <li><strong>Cambiar el título del gráfico:</strong> Modifica el título por uno que se ajuste a los datos representados.</li>
+        </ul>
+        <img src="https://excelfull.com/excel/wp-content/uploads/2022/12/contorno-de-forma.png">.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/c2ilyurxzJc" allowfullscreen></iframe>
+                <p>Video: Dar Formato a un Gráfico</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function mostrarTema(temaId) {
+        const temas = document.querySelectorAll('.contenido-tema');
+        temas.forEach(tema => tema.style.display = 'none');
+        document.getElementById('contenido-' + temaId).style.display = 'block';
+    }
+</script>
+
+<style>
+
+    .video-container iframe {
+        width: 100%;
+        height: 315px; 
+        max-width: 560px;
+        margin: 0 auto;
+        display: block;
+    }
+</style>
+
+
+    <script>
+        function mostrarTema(tema) {
+           
+            var temas = document.querySelectorAll('.contenido-tema');
+            temas.forEach(function(tema) {
+                tema.style.display = "none";
+            });
+
+           
+            var contenido = document.getElementById("contenido-" + tema);
+            if (contenido.style.display === "none" || contenido.style.display === "") {
+                contenido.style.display = "block";
+            } else {
+                contenido.style.display = "none";
+            }
+        }
+    </script>
+</div>
+
+
+
+
+
+<div id="powerpoint" class="content slide">
+    <h2>Microsoft PowerPoint</h2>
+    <p>Detalles adicionales sobre el software Microsoft PowerPoint.</p>
+        <a href="#" onclick="mostrarSeccion('inicio', 'fade')">Volver al inicio</a> 
+
+    <!-- Contenido del temario -->
+    <div id="ppt-content">
+        <h1>Temario Básico de PowerPoint 2016</h1>
+
+        <div class="tema">
+            <h2>Pantalla Principal</h2>
+            <p><ul>
+    <li><strong>Cinta de Opciones (Ribbon)</strong>: Contiene pestañas con botones para herramientas como "Inicio", "Insertar", "Fórmulas", etc.</li>
+    <li><strong>Barra de Herramientas</strong>: Contiene botones para acciones comunes, como "Guardar", "Deshacer", etc.</li>
+    <li><strong>Barra de Fórmulas</strong>: Área para ver y editar el contenido de la celda seleccionada.</li>
+    <li><strong>Área de la Hoja de Cálculo</strong>: 
+        <ul>
+            <li><strong>Barra lateral de Hojas</strong>: Muestra las pestañas de las diferentes hojas del libro.</li>
+            <li><strong>Cuadrícula de Celdas</strong>: Una malla de celdas organizadas en filas y columnas donde se ingresan datos.</li>
+        </ul>
+    </li>
+    <li><strong>Barra de Estado</strong>: Muestra información como la celda seleccionada, el modo de selección y el zoom.</li>
+</ul>
+
+<!-- Agregar la imagen -->
+<img src="https://slideplayer.es/slide/13919015/86/images/8/8.jpg" alt="Pantalla Principal de Excel">
+.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/cwZCPEqJP-k" allowfullscreen></iframe>
+                <p>Video: Pantalla Principal</p>
+            </div>
+        </div>
+
+        <div class="tema">
+            <h2>Crear una Presentación</h2>
+            <p><ul>
+    <li><strong>Abre PowerPoint</strong>: Inicia la aplicación PowerPoint en tu dispositivo.</li>
+    <li><strong>Selecciona una plantilla</strong>: Elige entre las plantillas prediseñadas o selecciona "Presentación en blanco" para comenzar desde cero.</li>
+    <li><strong>Añadir diapositivas</strong>: Haz clic en "Nueva diapositiva" para agregar más diapositivas a la presentación. Puedes elegir diferentes diseños (título, contenido, imagen, etc.).</li>
+    <li><strong>Agrega contenido</strong>: Inserta texto, imágenes, gráficos, tablas, videos, y otros elementos a las diapositivas.</li>
+    <li><strong>Personaliza el diseño</strong>: Ajusta el fondo, el esquema de colores y el diseño de las diapositivas utilizando las opciones de "Diseño" o "Fondo" en la barra de herramientas.</li>
+    <li><strong>Aplicar transiciones</strong>: Añade efectos visuales entre las diapositivas usando la pestaña "Transiciones".</li>
+    <li><strong>Agregar animaciones</strong>: Aplica animaciones a los objetos dentro de las diapositivas (textos, imágenes, etc.) desde la pestaña "Animaciones".</li>
+    <li><strong>Revisar la presentación</strong>: Haz clic en "Vista de presentación" o presiona F5 para ver cómo se verán las diapositivas al ser presentadas.</li>
+    <li><strong>Guardar la presentación</strong>: Guarda el archivo haciendo clic en "Archivo" > "Guardar" o "Guardar como" para elegir el formato y la ubicación de tu archivo.</li>
+    <li><strong>Presentar</strong>: Con la presentación lista, haz clic en "Presentación con diapositivas" para comenzar a mostrarla en una pantalla o proyector.</li>
+</ul>
+
+<!-- Agregar la imagen -->
+<img src="https://www.techsmith.es/blog/wp-content/uploads/2022/12/como-hacer-presentacion-powerpoint-4.png" alt="Cómo crear una presentación en PowerPoint">
+.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/YMzDHZmCncQ" allowfullscreen></iframe>
+                <p>Video: Crear una Presentación</p>
+            </div>
+        </div>
+
+        <div class="tema">
+            <h2>Agregar y Eliminar Diapositivas</h2>
+            <p><ul>
+    <li><strong>Agregar una diapositiva</strong>:
+        <ul>
+            <li><strong>Usando el menú</strong>: Haz clic en la pestaña "Inicio" y luego en "Nueva diapositiva". Puedes elegir entre varios diseños para la nueva diapositiva.</li>
+            <li><strong>Usando el atajo de teclado</strong>: Presiona <strong>Ctrl + M</strong> para agregar rápidamente una nueva diapositiva.</li>
+            <li><strong>Agregar diapositiva desde la barra lateral</strong>: En el panel de la izquierda, haz clic derecho y selecciona "Nueva diapositiva".</li>
+        </ul>
+    </li>
+    <li><strong>Eliminar una diapositiva</strong>:
+        <ul>
+            <li><strong>Usando el menú</strong>: Haz clic en la diapositiva que deseas eliminar en el panel lateral, luego haz clic en "Inicio" y selecciona "Eliminar diapositiva".</li>
+            <li><strong>Usando el atajo de teclado</strong>: Selecciona la diapositiva que deseas eliminar y presiona <strong>Supr</strong> o <strong>Delete</strong> en tu teclado.</li>
+            <li><strong>Eliminar diapositiva desde la barra lateral</strong>: Haz clic derecho sobre la diapositiva en el panel de la izquierda y selecciona "Eliminar diapositiva".</li>
+        </ul>
+    </li>
+</ul>
+
+<!-- Agregar la imagen -->
+<img src="https://www.customguide.com/imagenes/cursos/powerpoint-2016/powerpoint--agregar-y-disenar-diapositivas-04.png" alt="Agregar y Diseñar Diapositivas en PowerPoint">
+.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/LySQoAU8fcY" allowfullscreen></iframe>
+                <p>Video: Agregar y Eliminar Diapositivas</p>
+            </div>
+        </div>
+
+        <div class="tema">
+            <h2>Insertar Elementos en las Diapositivas</h2>
+            <p><ul>
+    <li><strong>Insertar un cuadro de texto</strong>:
+        <ul>
+            <li>Haz clic en la pestaña "Insertar" y selecciona "Cuadro de texto".</li>
+            <li>Haz clic en la diapositiva donde quieras colocar el cuadro de texto y comienza a escribir.</li>
+        </ul>
+    </li>
+    <li><strong>Insertar una imagen</strong>:
+        <ul>
+            <li>Ve a la pestaña "Insertar" y haz clic en "Imágenes".</li>
+            <li>Selecciona "Este dispositivo" para elegir una imagen desde tu ordenador o "Imágenes en línea" para buscar imágenes en la web.</li>
+            <li>Selecciona la imagen y haz clic en "Insertar".</li>
+        </ul>
+    </li>
+    <li><strong>Insertar una forma</strong>:
+        <ul>
+            <li>En la pestaña "Insertar", selecciona "Formas".</li>
+            <li>Elige la forma que deseas agregar (rectángulo, círculo, flecha, etc.) y dibújala en la diapositiva.</li>
+        </ul>
+    </li>
+    <li><strong>Insertar una tabla</strong>:
+        <ul>
+            <li>Haz clic en la pestaña "Insertar" y selecciona "Tabla".</li>
+            <li>Elige el número de filas y columnas que deseas o selecciona "Insertar tabla" para personalizarlo.</li>
+        </ul>
+    </li>
+    <li><strong>Insertar un gráfico</strong>:
+        <ul>
+            <li>En la pestaña "Insertar", selecciona "Gráfico".</li>
+            <li>Elige el tipo de gráfico (barras, líneas, circular, etc.) y haz clic en "Aceptar".</li>
+        </ul>
+    </li>
+    <li><strong>Insertar un video</strong>:
+        <ul>
+            <li>Haz clic en la pestaña "Insertar" y selecciona "Video".</li>
+            <li>Puedes elegir entre "Video en línea" o "Video en mi PC", dependiendo de la fuente.</li>
+        </ul>
+    </li>
+    <li><strong>Insertar un icono</strong>:
+        <ul>
+            <li>En la pestaña "Insertar", selecciona "Iconos".</li>
+            <li>Busca el icono que deseas insertar y haz clic en "Insertar".</li>
+        </ul>
+    </li>
+    <li><strong>Insertar un enlace</strong>:
+        <ul>
+            <li>Selecciona el texto o la forma a la que deseas agregar un enlace.</li>
+            <li>Haz clic derecho y selecciona "Vinculo" o ve a la pestaña "Insertar" y selecciona "Vinculo".</li>
+            <li>Pega la URL del enlace y haz clic en "Aceptar".</li>
+        </ul>
+    </li>
+</ul>
+
+<!-- Agregar la imagen -->
+<img src="https://www.aulaclic.es/powerpoint-2016/graficos/pantalla_powerpoint_2016.png" alt="Pantalla de PowerPoint 2016">
+.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/daM0TtW4q0A" allowfullscreen></iframe>
+                <p>Video: Insertar Elementos en las Diapositivas</p>
+            </div>
+        </div>
+
+        <div class="tema">
+            <h2>Aplicar Estilos</h2>
+            <p><ul>
+    <li><strong>Aplicar un diseño de diapositiva</strong>: Selecciona un diseño desde la pestaña "Diseño".</li>
+    <li><strong>Aplicar un tema</strong>: En la pestaña "Diseño", elige un tema para la presentación.</li>
+    <li><strong>Cambiar el fondo</strong>: Ve a "Diseño" y selecciona "Formato de fondo" para personalizarlo.</li>
+    <li><strong>Aplicar una transición</strong>: En la pestaña "Transiciones", elige el efecto para la diapositiva.</li>
+    <li><strong>Aplicar animaciones</strong>: Selecciona un objeto y ve a "Animaciones" para elegir el efecto.</li>
+    <li><strong>Modificar el texto</strong>: Cambia el estilo del texto en la pestaña "Inicio" (fuente, tamaño, color, etc.).</li>
+    <li><strong>Ajustar alineación y espaciado</strong>: Usa las opciones en la pestaña "Inicio" para ajustar el texto y objetos.</li>
+</ul>
+
+<!-- Agregar la imagen -->
+<img src="https://www.customguide.com/imagenes/cursos/powerpoint-2016/powerpoint--personalizar-temas-01.png" alt="Personalizar temas en PowerPoint">
+.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/vX07IrBQ-6w" allowfullscreen></iframe>
+                <p>Video: Aplicar Estilos</p>
+            </div>
+       
+  
+    <script>
+        function mostrarTema(tema) {
+           
+            var temas = document.querySelectorAll('.contenido-tema');
+            temas.forEach(function(tema) {
+                tema.style.display = "none";
+            });
+
+           
+            var contenido = document.getElementById("contenido-" + tema);
+            if (contenido.style.display === "none" || contenido.style.display === "") {
+                contenido.style.display = "block";
+            } else {
+                contenido.style.display = "none";
+            }
+        }
+    </script>
+</div>
+
+
+
+  <script>
+        function mostrarSeccion(id, animacion) {
+            let secciones = document.querySelectorAll('.content');
+            secciones.forEach(seccion => {
+                seccion.style.display = 'none';
+                seccion.classList.remove('fade', 'slide', 'zoom', 'rotate');
+            });
+            let seccionMostrada = document.getElementById(id);
+            seccionMostrada.style.display = 'block';
+            seccionMostrada.classList.add(animacion);
+        }
+    </script>
+
+  
+</body>
+</html>
